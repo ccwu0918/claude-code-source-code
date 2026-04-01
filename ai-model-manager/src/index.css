@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4b4b;
+}
+
+/* Provider card colors */
+.provider-openai { --provider-color: #10a37f; }
+.provider-anthropic { --provider-color: #d0a77d; }
+.provider-perplexity { --provider-color: #20a4f3; }
+.provider-nvidia { --provider-color: #76b900; }
+.provider-exa { --provider-color: #ff6b35; }
+.provider-grok { --provider-color: #000000; }
+.provider-github { --provider-color: #6e5494; }
+.provider-deepseek { --provider-color: #2b6a9f; }
+.provider-minimax { --provider-color: #00d4aa; }
+.provider-minimaxi { --provider-color: #ff4081; }
+.provider-tencent { --provider-color: #ed1b2d; }
+.provider-aliyun { --provider-color: #ff6a00; }
